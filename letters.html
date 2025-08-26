@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/letters.css">
+    <link rel="stylesheet" href="./style/lettersphone.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="./img/logo/logo.jpeg" alt="Mira Logistics">
+    </div>
+        <!-- Кнопка-гамбургер -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html#hero">Главная</a></li>
+        <li><a href="index.html#features-section">Услуги</a></li>
+        <li><a href="index.html#about-class">О Нас</a></li>
+        <li><a href="index.html#indus">Отрасли</a></li>
+        <li><a href="index.html#">Международная логистика</a></li>
+        <li><a href="#thanks">Контакты</a></li>
+        <li><a href="tel:+77059888454" class="btn-contact">Связаться с нами</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="logistics-section">
+  <h2>Международная логистика</h2>
+  <p class="subtitle">Перевозки между Казахстаном, Россией и Китаем</p>
+  <div class="routes-grid">
+    <div class="route-card">
+      <img src="flag-kz.png" alt="Казахстан">
+      <span>Казахстан → Россия</span>
+    </div>
+    <div class="route-card">
+      <img src="flag-ru.png" alt="Россия">
+      <span>Россия → Казахстан</span>
+    </div>
+    <div class="route-card">
+      <img src="flag-kz.png" alt="Казахстан">
+      <span>Казахстан → Китай</span>
+    </div>
+    <div class="route-card">
+      <img src="flag-cn.png" alt="Китай">
+      <span>Китай → Казахстан</span>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  });
+  </script>
+</body>
+</html>
