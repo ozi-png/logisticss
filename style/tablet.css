@@ -1,0 +1,75 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    padding: 12px 30px;
+  }
+
+  /* Показываем меню и сбрасываем мобильные стили */
+  nav {
+    display: block !important;
+    position: static !important;
+    background: none !important;
+    width: auto !important;
+  }
+
+  nav ul {
+    display: flex !important;
+    gap: 35px;
+    align-items: center;
+    justify-content: center; /* меню по центру */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+
+  .btn-contact {
+    padding: 12px 22px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  /* Прячем гамбургер */
+  .menu-toggle {
+    display: none !important;
+  }
+    .features {
+    grid-template-columns: repeat(2, 1fr); /* два блока в ряд */
+    gap: 25px;
+  }
+
+  .feature-item {
+    padding: 18px;
+  }
+
+  .feature-item h3 {
+    font-size: 16px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+
+  .feature-item .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feature-item .icon img {
+    width: 26px;
+    height: 26px;
+  }
+}

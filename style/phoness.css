@@ -1,0 +1,169 @@
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    font-size: 26px;
+    right: 20px;
+  }
+
+  nav ul {
+    top: 55px;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .hero-container {
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-form form {
+    width: 100%; /* ✅ фикс чтобы не вылезало */
+  }
+
+  .btn-hero {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .hero-form {
+    padding: 15px;
+    right: 0;
+  }
+
+  .hero-form h2 {
+    font-size: 16px;
+  }
+
+  .btn-calc {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .feature-item {
+    padding: 12px;
+  }
+
+  .feature-item h3 {
+    font-size: 14px;
+  }
+
+  .feature-item p {
+    font-size: 12px;
+  }
+
+  .feature-item .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-item {
+    max-width: 260px;
+  }
+
+  .service-item img {
+    max-height: 160px;
+  }
+
+  .overlay {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .about {
+    padding: 30px 10px;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about h3 {
+    font-size: 1rem;
+  }
+
+  .about p, .about ul li {
+    font-size: 0.85rem;
+  }
+
+  .industries h2 {
+    font-size: 22px;
+  }
+
+  .industries .intro {
+    font-size: 14px;
+  }
+
+  .industry h3 {
+    font-size: 18px;
+  }
+
+  .industry p {
+    font-size: 14px;
+  }
+
+  .stats-title {
+    font-size: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr; /* ✅ по одному в ряд */
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle span {
+    font-size: 16px;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr; /* ✅ один логотип в ряд */
+    gap: 15px;
+  }
+
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .contact-section h2 {
+    font-size: 20px;
+  }
+
+  .contact-section .phone {
+    font-size: 22px;
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .letters-container h2 {
+    font-size: 20px;
+  }
+
+  .swiper-slide img {
+    max-height: 220px;
+  }
+}

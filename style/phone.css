@@ -1,0 +1,283 @@
+@media (max-width: 768px) {
+  .body {
+    overflow-x: hidden; /* убираем горизонтальный скролл */
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    height: 45px;
+    margin-left: 0;
+  }
+
+  /* Бургер */
+  .menu-toggle {
+    position: fixed;
+    right: 40px;
+    display: block;
+    font-size: 30px;
+    color: #d4af37;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  /* Меню скрыто по умолчанию */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* ❗ по умолчанию скрыто */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #4b4a5a;
+    padding: 20px 0;
+    border-radius: 0 0 12px 12px;
+    z-index: 9999;
+  }
+
+  /* Когда навигация активна — показываем */
+  nav ul.active {
+    display: flex;
+  }
+
+  /* 📌 Контейнер теперь грид */
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 40px;
+    padding: 0 15px;
+    position: relative;
+    right: 10px;
+  }
+
+  /* Левая часть (текст) */
+  .hero-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+  .hero-form form {
+    display: grid;
+    width: 620px;
+  }
+
+  .btn-hero {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  /* Правая часть (форма) */
+  .hero-form {
+    width: 100%;
+    margin: 0;
+    padding: 18px;
+    display: grid;
+    gap: 15px;
+    position: relative;
+    right: 20px;
+  }
+
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr; /* поля формы в столбик */
+    gap: 12px;
+  }
+
+  .hero-form h2 {
+    font-size: 18px;
+  }
+
+  .btn-calc {
+    font-size: 16px;
+    padding: 14px;
+  }
+    .features {
+    grid-template-columns: 1fr; /* Один блок в ряд */
+    gap: 20px;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+
+  .feature-item h3 {
+    font-size: 15px;
+  }
+
+  .feature-item p {
+    font-size: 13px;
+  }
+
+  .feature-item .icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .feature-item .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  /*услуга блок*/
+  .services-grid {
+    grid-template-columns: 1fr; /* один блок в ряд */
+  }
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* чтобы текст не шире картинки */
+    margin: 0 auto;
+  }
+
+  .service-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+
+  .overlay {
+    position: static;
+    background: none;
+    color: #fff;
+    opacity: 1;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 100%; /* ограничение по ширине картинки */
+    word-wrap: break-word; /* перенос слов */
+  }
+
+  /*О компании*/
+    .about {
+    padding: 40px 15px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 15px;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .about h3 {
+    font-size: 1.1rem;
+  }
+
+  .about p, .about ul li {
+    font-size: 0.95rem;
+  }
+  /*Отрасли*/
+    .industries {
+    padding: 40px 15px;
+  }
+
+  .industries h2 {
+    font-size: 26px;
+  }
+
+  .industries .intro {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .industry h3 {
+    font-size: 20px;
+  }
+
+  .industry p {
+    font-size: 15px;
+  }
+    .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-list {
+    gap: 20px;
+  }
+
+  .step {
+    align-items: center;
+  }
+
+  .step-number {
+    min-width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+    .stats-title {
+    font-size: 1.8rem;
+  }
+
+  .stats-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr; /* ✅ два элемента в ряд */
+    gap: 20px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle span {
+    font-size: 18px;
+ }
+   .partners-grid {
+    grid-template-columns: repeat(2, 1fr); /* по 2 в ряд */
+    gap: 20px;
+  }
+    .contact-section {
+    min-height: 100vh; /* на телефоне фон во весь экран */
+    padding: 40px 15px;
+  }
+
+  .contact-section .overlay {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .contact-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-section .phone {
+    font-size: 26px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+    .letters-container h2 {
+    font-size: 24px;
+  }
+  .swiper-slide img {
+    max-height: 300px;
+  }
+}
