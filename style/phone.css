@@ -1,0 +1,407 @@
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  }
+  /* Шапка */
+  header {
+    padding: 10px 15px;
+    flex-direction: row;
+  }
+
+  .logo img {
+    height: 40px;
+    position: relative;
+    right: 50px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #4b4a5a;
+    padding: 15px 0;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav ul.active {
+    display: flex; /* показываем при клике */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    left: 50px;
+  }
+
+  /* Hero */
+  .hero-container {
+    display: flex;
+    flex-direction: column; /* форма под текстом */
+    justify-content: flex-start; /* убираем вертикальное центрирование */
+    align-items: center; /* центрируем только по горизонтали */
+    min-height: auto; /* чтобы не растягивался на весь экран */
+    padding: 20px 10px;
+  }
+
+  .hero-form {
+    max-width: 100%; 
+    width: 100%;     /* форма растягивается на ширину экрана */
+    margin: 0 auto;       /* убираем auto */
+    left: auto;      /* убираем смещение */
+    right: auto;
+    position: relative;
+    padding: 15px;
+  }
+  .hero-text h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .btn-hero {
+    font-size: 14px;
+    padding: 10px 16px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Форма */
+  .form-row {
+    grid-template-columns: 1fr; /* в одну колонку */
+    gap: 10px;
+  }
+
+  .hero-form input,
+  .hero-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-calc {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* Блок преимуществ */
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Услуги */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item img {
+    height: 200px;
+  }
+
+  /* Доставка */
+  .container__offer {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-text {
+    padding: 25px 15px;
+  }
+
+  .offer-text h2 {
+    font-size: 22px;
+  }
+
+  /* Шаги */
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .steps-info h2 {
+    font-size: 20px;
+  }
+
+  /* Цифры */
+  .stats-title {
+    font-size: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle span {
+    font-size: 14px;
+  }
+
+  /* Партнеры */
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .partner img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* О компании */
+  .industries h2 {
+    font-size: 22px;
+  }
+
+  .industries .intro {
+    font-size: 14px;
+  }
+
+  /* Контакты */
+  .contact-section {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .contact-section h2 {
+    font-size: 20px;
+  }
+
+  .contact-section .phone {
+    font-size: 22px;
+  }
+
+  /* Благодарность */
+  .thanks-block {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .thanks-image img {
+    max-width: 150px;
+  }
+
+  /* Логистика */
+  .logistics-section {
+    padding: 30px 15px;
+  }
+
+  .logistics-section h2 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .routes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-card span {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+ html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* убираем прокрутку влево-вправо */
+}
+
+* {
+  box-sizing: border-box;
+}
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container, .section, .hero, .wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+  header {
+    padding: 12px 20px;
+  }
+  .menu-toggle {
+    display: block; /* показать бургер */
+  }
+  
+  #nav-menu ul {
+    display: none;          /* скрыто по умолчанию */
+    flex-direction: column; /* вертикальное */
+    background: #4b4a5a;
+    position: absolute;
+    top: px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+  /* показать при активном классе */
+  #nav-menu.active ul {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    background: #4b4a5a;
+    padding: 20px 0;
+    text-align: center;
+    gap: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    left: 160px;
+  }
+  .hero-container {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .hero-form {
+    justify-self: center; /* можно поставить left, если не нужен центр */
+    position: relative;
+    left: 100px;
+  }
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .features,
+  .steps-container,
+  .container__offer,
+  .stats-grid,
+  .partners-grid,
+  .routes-grid {
+    grid-template-columns: 1fr; /* всё в одну колонку */
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .circle span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .header{
+    margin-left: 50px;
+  }
+  .logo img{margin-left: 60px;
+
+  }
+  .hero-form {
+    max-width: 90%;
+    margin-left: -70px;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    padding: 10px 15px;
+  }
+  .menu-toggle{
+    margin-right: 60px;
+  }
+  .logo img {
+    margin-left: 10px;
+    height: 45px;
+  }
+  .hero-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .hero-form {
+    margin: 0 auto;
+    width: 100%;  
+    position: relative;
+    left: auto;
+  }
+  .hero-form h2{
+    font-size: 18px;
+    color: rgb(160, 129, 19);
+  }
+}
+@media (max-width: 390px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 38px;
+    margin-right: 40px;
+  }
+
+  .menu-toggle {
+    font-size: 26px;
+    margin-right: auto;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .btn-contact {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .hero-form {
+    max-width: 100%;
+    margin: 0 auto;
+    left: auto;
+  }
+}
