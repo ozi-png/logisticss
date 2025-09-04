@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mira Logistics</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/phone.css">
+  <link rel="stylesheet" href="./style/tablet.css">
+  <!-- Подключаем Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17532175115"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17532175115');
+</script>
+<!-- PhotoSwipe -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"/>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo/logo.jpeg" alt="Mira Logistics">
+    </div>
+        <!-- Кнопка-гамбургер -->
+<div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- ← бургер -->
+  <nav id="nav-menu">
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#features-section">Услуги</a></li>
+        <li><a href="#about-class">О Нас</a></li>
+        <li><a href="#indus">Отрасли</a></li>
+        <li><a href="#thanks">Международная логистика</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="tel:+77059888454" class="btn-contact">Связаться с нами</a></li>
+      </ul>
+    </nav>
+  </header>
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <!-- Левая часть -->
+    <div class="hero-text">
+      <h1>Надёжные грузоперевозки по казахстану с Mira Logistics</h1>
+      <p>
+        Алматы – Астана – Шымкент и другие маршруты. Доставляем грузы по Казахстану и за его пределами быстро и безопасно.
+        Оставьте заявку прямо сейчас и получите бесплатную консультацию в течение 15 минут.
+      </p>
+      <p class="txt">Возим от 300кг</p>
+      <a href="https://wa.me/77059888454" target="_blank" class="btn-hero">Заказать консультацию</a>
+    </div>
+    <!-- Правая часть (форма) -->
+    <div class="hero-form">
+      <h2>Рассчитать стоимость перевозки</h2>
+      <form id="calcForm">
+        <div class="form-row">
+          <input type="text" id="from" placeholder="Откуда" required>
+          <input type="text" id="to" placeholder="Куда" required>
+        </div>
+        <textarea id="cargo" rows="3" placeholder="Описание груза (вес, объем)" required></textarea>
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+          <input type="tel" id="phone" placeholder="Ваш телефон" required>
+        </div>
+        <div class="form-row">
+          <input type="text" id="company" placeholder="Название компании">
+          <input type="email" id="email" placeholder="Ваш e-mail">
+        </div>
+        <button type="submit" class="btn-calc">Рассчитать стоимость</button>
+      </form>
+    </div>
+</section>
+<section id="features-section" class="features-section">
+  <div class="container__feat">
+    <div class="features">
+      <div class="feature-item">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Адресная доставка">
+        </div>
+        <h3>АДРЕСНАЯ ДОСТАВКА</h3>
+        <p>Доставка до адреса получателя с уточнением удобного для него времени</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">
+          <img src="https://www.svgrepo.com/show/343406/calendar-year-month-business-schedule-money-finance.svg"  alt="Автопарк">
+        </div>
+        <h3>ОТСРОЧКА ПЛАТЕЖА</h3>
+        <p>Гибкие условия оплаты: перевозим груз сейчас, оплата в удобный для вас срок.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Оплата">
+        </div>
+        <h3>ОПЛАТА В ОДИН КОНЕЦ</h3>
+        <p>Вы оплачиваете стоимость перевозки в один конец, не платите за обратную дорогу</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" alt="Сроки">
+        </div>
+        <h3>ДОСТАВКА ТОЧНО В СРОК</h3>
+        <p>Мы гарантируем качественную доставку груза точно в указанный срок</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section id="services" class="services-section">
+  <div class="container__services">
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="./img/images/газель.jpg" alt="Сендвич панели">
+        <div class="overlay">Перевозка газелями</div>
+      </div>
+      <div class="service-item">
+        <img src="./img/images/фура.jpg" alt="Строительные материалы">
+        <div class="overlay">Грузоперевозка фурами</div>
+      </div>
+      <div class="service-item">
+        <img src="./img/images/реф.jpg" alt="Товары народного потребления">
+        <div class="overlay">Перевозка рефрежкраторами</div>
+      </div> 
+      <div class="service-item">
+        <img src="./img/images/тех.jpg" alt="Продукты питания">
+        <div class="overlay">Перевозка техники</div>
+      </div>
+      <div class="service-item">
+        <img src="./img/images/негабарит.jfif" alt="Кондитерские изделия">
+        <div class="overlay">Негабаритная перевозка</div>
+      </div>
+      <div class="service-item">
+        <img src="./img/images/контейнер.jpg" alt="Буровое оборудование">
+        <div class="overlay">Перевозка контейнеров</div>
+      </div> 
+      <div class="service-item">
+        <img src="./img/images/обор.jpg" alt="Оборудование">
+        <div class="overlay">Перевозка оборудовании</div>
+      </div>
+      <div class="service-item">
+        <img src="./img/images/переезд.jpg" alt="Мебель">
+        <div class="overlay">Квартирные, офисные и домашние переезды</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="offer">
+  <div class="container__offer">
+    <!-- Левая часть -->
+    <div class="offer-text">
+      <h2>Хотите, чтобы<br>ваш груз прибыл<br>точно в срок и без повреждений?</h2>
+      <p>
+        Мы перевозим напрямую, исключая складские пересортировки:
+      </p>
+      <ul>
+        <li><span class="check">✔</span> Надёжность и защита на всём пути</li>
+        <li><span class="check">✔</span> Быстрая доставка без задержек</li>
+      </ul>
+    </div>
+    <!-- Правая часть -->
+    <div class="offer-image">
+      <img src="./img/images/347261529230588.jpeg" alt="Грузоперевозки Mira Logistics">
+    </div>
+  </div>
+</section>
+<section class="steps-section">
+  <div class="steps-container">
+    <!-- Левая часть -->
+    <div class="steps-info">
+      <h2><span>ВСЕГО 5 ШАГОВ</span> ДО ПОЛУЧЕНИЯ ГРУЗА</h2>
+      <p>
+        Перевозим грузы по Казахстану с гарантией качества и сохранности. <br>Основные направления: Алматы — Астана, Астана — Алматы, Алматы — Шымкент.
+      </p>
+      <a href="https://wa.me/77059888454" target="_blank" class="btn-step">Сделать первый шаг</a>
+    </div>
+    <!-- Правая часть -->
+    <div class="steps-list">
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Заявка или расчёт</h3>
+          <p>Вы оставляете заявку на сайте или звоните по номеру +7 705 988 8454</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Консультация менеджера</h3>
+          <p>Наш специалист связывается с вами и уточняет все детали перевозки.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Отправка данных</h3>
+          <p>Мы отправляем вам расчёт стоимости, реквизиты и договор.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Оплата перевозки</h3>
+          <p>Индивидуальный подход к каждому клиенту.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <h3>Получение груза</h3>
+          <p>Мы доставляем груз в срок и в полной сохранности.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+  <div class="container__stat">
+    <h1 class="stats-title">МЫ В ЦИФРАХ</h1>
+    <p class="stats-subtitle">
+      Наша организация выполняет перевозки с 2022 года, за это время мы выполнили более 5 000 грузоперевозок.
+    </p>
+    <div class="stats-grid">
+
+      <!-- Филиалы -->
+      <div class="stat-item">
+        <div class="circle">
+          <svg viewBox="0 0 120 120">
+            <!-- фон -->
+            <circle class="circle-bg" cx="60" cy="60" r="54"/>
+            <!-- прогресс -->
+            <circle class="circle-progress" cx="60" cy="60" r="54" stroke-dasharray="339" stroke-dashoffset="85"/>
+          </svg>
+          <span>2</span>
+        </div>
+        <p>Филиала по всему Казахстану</p>
+      </div>
+
+      <!-- Грузоперевозки -->
+      <div class="stat-item">
+        <div class="circle">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="54"/>
+            <circle class="circle-progress" cx="60" cy="60" r="54" stroke-dasharray="339" stroke-dashoffset="30"/>
+          </svg>
+          <span>700</span>
+        </div>
+        <p>Грузоперевозок выполнили</p>
+      </div>
+
+      <!-- Города -->
+      <div class="stat-item">
+        <div class="circle">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="54"/>
+            <circle class="circle-progress" cx="60" cy="60" r="54" stroke-dasharray="339" stroke-dashoffset="120"/>
+          </svg>
+          <span>825</span>
+        </div>
+        <p>Города получили груз</p>
+      </div>
+      <!-- Тонны -->
+      <div class="stat-item">
+        <div class="circle">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="54"/>
+            <circle class="circle-progress" cx="60" cy="60" r="54" stroke-dasharray="339" stroke-dashoffset="50"/>
+          </svg>
+          <span>8892</span>
+        </div>
+        <p>Тонн груза перевезли</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="partners">
+  <div class="container">
+    <h2 class="partners-title">Наши партнеры</h2>
+    <p class="partners-subtitle">Мы сотрудничаем с надёжными компаниями</p>
+
+    <div class="partners-grid">
+      <div class="partner">
+        <img src="./img/images/татти.avif" alt="Компания 1">
+      </div>
+      <div class="partner">
+        <img src="./img/images/строй.jpg" alt="Компания 2">
+      </div>
+      <div class="partner">
+        <img src="./img/images/стинерги.jfif" alt="Компания 3">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Блок "О компании" ===== -->
+<section id="indus" class="industries">
+  <div class="container__industries">
+    <h2>Отрасли грузоперевозок</h2>
+    <p class="intro">
+      Грузоперевозки являются важной частью логистической цепочки и играют ключевую роль в различных отраслях экономики. 
+      Компания <b>Mira Logistics</b> специализируется на автомобильных перевозках и предлагает надёжные решения для доставки товаров.
+    </p>
+    <div class="industry">
+      <h3>1. Промышленность</h3>
+      <p>
+        В промышленности грузоперевозки необходимы для доставки сырья и готовой продукции.  
+        <b>Mira Logistics</b> обеспечивает транспортировку различных материалов, включая металлы, детали и оборудование, соблюдая сроки поставки.
+      </p>
+    </div>
+    <div class="industry">
+      <h3>2. Сельское хозяйство</h3>
+      <p>
+        Сельское хозяйство требует бережного обращения с продукцией, особенно с быстро портящимися товарами.  
+        <b>Mira Logistics</b> перевозит овощи, фрукты и зерновые, обеспечивая надлежащие условия хранения и транспортировки.
+      </p>
+    </div>
+    <div class="industry">
+      <h3>3. Торговля</h3>
+      <p>
+        Для розничных и оптовых продавцов надёжная доставка товаров имеет решающее значение.  
+        <b>Mira Logistics</b> предлагает гибкие решения для поставок в магазины и на склады, снижая риски повреждений.
+      </p>
+    </div>
+    <div class="industry">
+      <h3>4. Строительство</h3>
+      <p>
+        Строительная отрасль нуждается в перевозке крупногабаритных и тяжеловесных грузов.  
+        У <b>Mira Logistics</b> есть специальный транспорт для безопасной доставки строительных материалов и оборудования.
+      </p>
+    </div>
+    <div class="industry">
+      <h3>5. Электроника и высокие технологии</h3>
+      <p>
+        <b>Mira Logistics</b> предлагает услуги перевозки сложного оборудования и электроники с усиленной защитой на каждом этапе доставки.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Блок с телефоном -->
+<section class="contact-section">
+  <div class="overlay">
+    <h2>УЗНАЙТЕ ВСЕ ПОДРОБНОСТИ:</h2>
+    <p>Позвоните нам или оставьте заявку на сайте и наши менеджеры проконсультируют Вас по любому вопросу.</p>
+    <h3 class="phone">
+      <a href="tel:+77059888454">+7 705 988 8454</a>
+    </h3>
+    <p class="free-call">Звонок бесплатный</p>
+    <button class="contact-btn" onclick="openForm()">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+  </div>
+</section>
+<!-- Форма заявки (модалка) -->
+<div id="contactForm" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2>Оставьте заявку</h2>
+    <form id="modalForm">
+      <input type="text" id="modal-name" placeholder="Ваше имя" required>
+      <input type="tel" id="modal-phone" placeholder="Телефон" required>
+      <textarea id="modal-question" placeholder="Ваш вопрос"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- БЛАГОДАРСТВЕННЫЕ -->
+<section id="thanks" class="thanks-block">
+  <div class="thanks-content">
+    <h2>БЛАГОДАРСТВЕННЫЕ<br>ПИСЬМА</h2>
+    <a href="letters.html" class="btn">ПОСМОТРЕТЬ</a>
+  </div>
+  <div class="thanks-image">
+    <img src="./img/slid/cf8fe06d6d0bcda362ce5bce521eca4e.jpeg" alt="Благодарственное письмо">
+  </div>
+</section>
+<section class="logistics-section">
+  <h2>Международная логистика</h2>
+  <p class="subtitle">Перевозки грузов между Казахстаном, Россией и Китаем</p>
+
+  <div class="routes-grid">
+    <div class="route-card">
+      <img src="./img/международная/kzdvr4_1b902084.jpg.webp" alt="Казахстан">
+      <span>Казахстан → Россия</span>
+    </div>
+    <div class="route-card">
+      <img src="./img/международная/россия.jpg" alt="Россия">
+      <span>Россия → Казахстан</span>
+    </div>
+    <div class="route-card">
+      <img src="./img/международная/китай.webp" alt="Казахстан">
+      <span>Казахстан → Китай</span>
+    </div>
+    <div class="route-card">
+      <img src="./img/международная/kaz.webp" alt="Китай">
+      <span>Китай → Казахстан</span>
+    </div>
+  </div>
+</section>
+<div class="mobile-contact">
+  <a href="tel:+77059888454" class="call-btn">
+    📞 Позвонить
+  </a>
+  <a href="https://wa.me/77059888454" target="_blank" class="whatsapp-btn">
+    <!-- SVG иконка WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" style="vertical-align: middle; margin-right: 6px; fill: white;">
+      <path d="M16 .667C7.64.667.667 7.64.667 16c0 2.802.74 5.538 2.147 7.933L.667 31.333l7.6-2.093a15.263 15.263 0 0 0 7.733 2.093c8.36 0 15.333-6.973 15.333-15.333S24.36.667 16 .667zm0 27.466c-2.507 0-4.96-.673-7.093-1.947l-.507-.3-4.52 1.24 1.253-4.4-.327-.547A12.52 12.52 0 0 1 3.467 16c0-6.907 5.627-12.533 12.533-12.533 6.907 0 12.533 5.626 12.533 12.533 0 6.906-5.626 12.533-12.533 12.533zm6.853-9.387c-.373-.187-2.213-1.093-2.56-1.213-.347-.133-.6-.187-.853.187s-.987 1.213-1.213 1.467c-.213.253-.44.28-.813.093-.373-.187-1.573-.573-3-1.827-1.107-.987-1.84-2.2-2.053-2.573-.213-.373-.027-.573.16-.76.16-.16.373-.44.56-.653.187-.213.253-.36.373-.6.12-.253.06-.467-.027-.653-.093-.187-.853-2.053-1.173-2.813-.307-.733-.627-.627-.853-.64-.227-.013-.487-.013-.747-.013s-.693.1-1.053.467c-.36.373-1.387 1.347-1.387 3.293s1.413 3.827 1.613 4.093c.2.267 2.787 4.253 6.747 5.96.947.413 1.693.667 2.267.853.947.293 1.813.253 2.493.153.76-.113 2.213-.907 2.527-1.787.32-.88.32-1.64.227-1.787-.093-.147-.347-.24-.72-.427z"/>
+    </svg>
+    WhatsApp
+  </a>
+</div>
+  <script>
+// --- Гамбургер ---
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+
+  navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  });
+});
+
+// --- Модалка ---
+function openForm() {
+  document.getElementById("contactForm").style.display = "flex";
+}
+function closeForm() {
+  document.getElementById("contactForm").style.display = "none";
+}
+window.onclick = function(event) {
+  const modal = document.getElementById("contactForm");
+  if (event.target === modal) {
+    closeForm();
+  }
+};
+
+// --- Hero форма ---
+document.getElementById("calcForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let from = document.getElementById("from").value;
+  let to = document.getElementById("to").value;
+  let cargo = document.getElementById("cargo").value;
+  let name = document.getElementById("name").value;   // ← совпадает с твоим HTML
+  let phone = document.getElementById("phone").value; // ← совпадает с твоим HTML
+  let company = document.getElementById("company").value;
+  let email = document.getElementById("email").value;
+
+  let message = `🚚 Заявка на расчет:\n\nОткуда: ${from}\nКуда: ${to}\nГруз: ${cargo}\nИмя: ${name}\nТелефон: ${phone}\nКомпания: ${company}\nEmail: ${email}`;
+
+  let whatsappUrl = "https://wa.me/77059888454?text=" + encodeURIComponent(message);
+  window.open(whatsappUrl, "_blank");
+})
+
+// --- Модальная форма ---
+document.getElementById("modalForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("modal-name").value;
+  let phone = document.getElementById("modal-phone").value;
+  let question = document.getElementById("modal-question").value;
+
+  let message = `📩 Новая заявка:\nИмя: ${name}\nТелефон: ${phone}\nВопрос: ${question}`;
+
+  let whatsappUrl = "https://wa.me/77059888454?text=" + encodeURIComponent(message);
+  window.open(whatsappUrl, "_blank");
+});
+  </script>
+</body>
+</html>
